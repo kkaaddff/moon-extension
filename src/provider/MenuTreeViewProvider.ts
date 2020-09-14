@@ -17,16 +17,6 @@ export class MenuTreeViewProvider implements vscode.TreeDataProvider<number> {
       webviewType: WebviewType.Setting,
       icon: "setting",
     },
-    {
-      label: "StatusBar快捷方式设置",
-      webviewType: WebviewType.StatusBarShortcut,
-      icon: "status-bar",
-    },
-    {
-      label: "无效Rap引用扫描",
-      webviewType: WebviewType.RapScan,
-      icon: "rap-scan",
-    },
   ];
 
   getTreeItem(offset: number): vscode.TreeItem {
@@ -45,8 +35,9 @@ export class MenuTreeViewProvider implements vscode.TreeDataProvider<number> {
     };
     return treeItem;
   }
+  
   getChildren(offset?: number): Thenable<number[]> {
-    return Promise.resolve([1, 2, 3, 4]);
+    return Promise.resolve(this.treeItems.map((item, index) => index));
   }
 
   getIcon(type: string): any {

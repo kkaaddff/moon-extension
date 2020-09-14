@@ -2,7 +2,7 @@
   "name": "moon",
   "displayName": "Moon",
   "description": "Moon 开发增强套件 @kkaaddff",
-  "icon": "https://frontend-1257122416.cos.ap-shanghai.myqcloud.com/static-resource/moon-clear-fill.png",
+  "icon": "images/Moon.svg",
   "version": "0.0.1",
   "publisher": "kkaaddff",
   "engines": {
@@ -31,38 +31,7 @@
       }
     ],
     "menus": {
-      "editor/context": [
-        {
-          "when": "resourceLangId ==  typescript",
-          "command": "mx.jumper.toHtml",
-          "group": "0_mx"
-        },
-        {
-          "when": "resourceLangId ==  javascript",
-          "command": "mx.jumper.toHtml",
-          "group": "0_mx"
-        },
-        {
-          "when": "resourceLangId ==  typescript",
-          "command": "mx.jumper.toRap",
-          "group": "0_mx"
-        },
-        {
-          "when": "resourceLangId ==  javascript",
-          "command": "mx.jumper.toRap",
-          "group": "0_mx"
-        },
-        {
-          "when": "resourceLangId ==  handlebars",
-          "command": "mx.jumper.toES",
-          "group": "0_mx"
-        },
-        {
-          "when": "resourceLangId ==  handlebars",
-          "command": "mx.code.toReact",
-          "group": "0_mx"
-        }
-      ],
+      "editor/context": [],
       "explorer/context": [
         {
           "when": "resourceLangId ==  typescript",
@@ -86,7 +55,7 @@
         {
           "id": "Moon",
           "title": "Moon VSCode插件",
-          "icon": "https://frontend-1257122416.cos.ap-shanghai.myqcloud.com/static-resource/moon-clear-fill.png"
+          "icon": "images/Moon.svg"
         }
       ]
     },
