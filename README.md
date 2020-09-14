@@ -151,7 +151,7 @@
 优化 webview 打开方式，做到窗口复用
 优化 StatusBar 设置，无需重启就能更新
 添加 mx-view 跳转功能
-添加 Magix Gallery 悬浮提示功能
+添加 Moon Gallery 悬浮提示功能
 添加 样式文件跳转功能
 
 ### 0.9.0
@@ -161,7 +161,7 @@
 
 ### 0.8.1
 
-Magix 项目信息获取异常 bugfix
+Moon 项目信息获取异常 bugfix
 
 ### 0.8.0
 

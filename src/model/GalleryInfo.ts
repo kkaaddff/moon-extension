@@ -427,11 +427,11 @@ export class GalleryInfo {
         title: "loading加载",
         subTitle: "",
         url: "/loading/index",
-        code: `let Magix = require('magix');
+        code: `let Moon = require('magix');
             let Loading = require('@../../mx-loading/index');
             let $ = require('$');
             
-            module.exports = Magix.View.extend({
+            module.exports = Moon.View.extend({
                 tmpl: '@index.html',
                 mixins: [Loading],
                 render() {
@@ -507,7 +507,7 @@ export class GalleryInfo {
       data: {
         title: "浮层",
         subTitle:
-          "Magix.View上挂载mxDialog（新开浮层），alert（提醒），confirm（二次确认），点击空白处自动关闭浮层",
+          "Moon.View上挂载mxDialog（新开浮层），alert（提醒），confirm（二次确认），点击空白处自动关闭浮层",
         url: "/dialog/index",
         code: ``,
       },

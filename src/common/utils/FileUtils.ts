@@ -28,7 +28,7 @@ export class FileUtils {
       vscode.workspace.workspaceFolders &&
       workspaceFolders[0] === vscode.workspace.workspaceFolders[0].uri.path
     ) {
-      projectPath = vscode.workspace.workspaceFolders[0].uri.path;
+      projectPath = vscode.workspace.rootPath;
     } else {
       workspaceFolders.forEach((folder) => {
         if (currentFile.indexOf(folder) === 0) {

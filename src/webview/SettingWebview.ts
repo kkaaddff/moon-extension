@@ -6,7 +6,7 @@ import { ConfigurationUtils } from "../common/utils/ConfigurationUtils";
 export class SettingWebview extends BaseView {
   public show() {
     let path = "./web/setting.html";
-    let title = "Magix VSCode 插件设置";
+    let title = "Moon VSCode 插件设置";
     this.createWebview(path, title, vscode.ViewColumn.Active);
     this.onDidReceiveMessage((e) => {
       if (e.type === WebCommand.SAVE_NICKNAME) {

@@ -26,7 +26,7 @@ export class GalleryHoverProvider implements vscode.HoverProvider {
     let url = `https://mo.m.taobao.com/page_201912120119435#!${data.url}`;
     hover.contents = [
       new vscode.MarkdownString(
-        `#### Magix Gallery - ${data.title} [链接](${url})`
+        `#### Moon Gallery - ${data.title} [链接](${url})`
       ),
       new vscode.MarkdownString(`#### ${data.subTitle} `),
     ];

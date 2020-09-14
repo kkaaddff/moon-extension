@@ -28,7 +28,7 @@ export class StatusBarShortcutWebview extends BaseView {
       this.postMessage(WebCommand.GET_SHORTCUT, {
         ok: false,
         msg:
-          "没有package.json文件或者没有找到Magix相关配置信息，请确保当前项目是一个 Magix 项目！",
+          "没有package.json文件或者没有找到Moon相关配置信息，请确保当前项目是一个 Moon 项目！",
       });
       return;
     }
@@ -59,7 +59,7 @@ export class StatusBarShortcutWebview extends BaseView {
       this.postMessage(WebCommand.GET_SHORTCUT, {
         ok: false,
         msg:
-          "没有package.json文件或者没有找到Magix相关配置信息，请确保当前项目是一个 Magix 项目！",
+          "没有package.json文件或者没有找到Moon相关配置信息，请确保当前项目是一个 Moon 项目！",
       });
       return;
     }
