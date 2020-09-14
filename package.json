@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "publisher": "kkaaddff",
   "engines": {
-    "vscode": "^1.42.0"
+    "vscode": "^1.49.0"
   },
   "categories": [
     "Other"
@@ -17,26 +17,6 @@
   "main": "./out/extension",
   "contributes": {
     "commands": [
-      {
-        "command": "mx.jumper.toHtml",
-        "title": "Magix-跳转至html"
-      },
-      {
-        "command": "mx.jumper.toES",
-        "title": "Magix-跳转至js/ts"
-      },
-      {
-        "command": "mx.jumper.toRap",
-        "title": "Magix-跳转至Rap定义"
-      },
-      {
-        "command": "mx.jumper.backAndForth",
-        "title": "MX"
-      },
-      {
-        "command": "mx.code.toReact",
-        "title": "To React"
-      },
       {
         "command": "mx.gogocode",
         "title": "GogoCode转换"
@@ -104,16 +84,16 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "Magix",
-          "title": "Magix VSCode插件",
-          "icon": "images/Magix.svg"
+          "id": "Moon",
+          "title": "Moon VSCode插件",
+          "icon": "https://frontend-1257122416.cos.ap-shanghai.myqcloud.com/static-resource/moon-clear-fill.png"
         }
       ]
     },
     "views": {
-      "Magix": [
+      "Moon": [
         {
-          "id": "magix-menu-view",
+          "id": "moon-menu-view",
           "name": "插件设置"
         }
       ]
@@ -151,7 +131,7 @@
     ],
     "configuration": [
       {
-        "title": "Magix VSCode 插件",
+        "title": "Moon VSCode 插件",
         "properties": {
           "magix.config.user.nickname": {
             "type": "string",
@@ -184,7 +164,6 @@
     "@types/node": "^8.10.25",
     "map-lru": "^1.0.2",
     "request": "^2.81.0",
-    "tslint": "^5.8.0",
     "typescript": "^2.6.1",
     "vscode": "^1.1.21"
   },

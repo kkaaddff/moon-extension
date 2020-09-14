@@ -25,9 +25,10 @@ export class FileUtils {
     // 如果发现只有一个根文件夹，读取其子文件夹作为 workspaceFolders
     if (
       workspaceFolders.length === 1 &&
-      workspaceFolders[0] === vscode.workspace.rootPath
+      vscode.workspace.workspaceFolders &&
+      workspaceFolders[0] === vscode.workspace.workspaceFolders[0].uri.path
     ) {
-      projectPath = vscode.workspace.rootPath;
+      projectPath = vscode.workspace.workspaceFolders[0].uri.path;
     } else {
       workspaceFolders.forEach((folder) => {
         if (currentFile.indexOf(folder) === 0) {
@@ -36,12 +37,12 @@ export class FileUtils {
       });
       if (!projectPath) {
         vscode.window.showErrorMessage(
-          "Magix-VSCode:当前编辑页面不属于workspace中文件，请打开workspace中文件，然后重启vscode"
+          "Moon-VSCode:当前编辑页面不属于workspace中文件，请打开workspace中文件，然后重启vscode"
         );
       }
     }
     if (!projectPath) {
-      vscode.window.showErrorMessage("Magix-VSCode:无效工程路径！");
+      vscode.window.showErrorMessage("Moon-VSCode:无效工程路径！");
       return "";
     }
     return projectPath;
