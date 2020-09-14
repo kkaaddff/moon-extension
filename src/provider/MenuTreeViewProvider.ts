@@ -35,9 +35,9 @@ export class MenuTreeViewProvider implements vscode.TreeDataProvider<number> {
     };
     return treeItem;
   }
-  
+
   getChildren(offset?: number): Thenable<number[]> {
-    return Promise.resolve(this.treeItems.map((item, index) => index));
+    return Promise.resolve(this.treeItems.map((item, index) => index + 1));
   }
 
   getIcon(type: string): any {
