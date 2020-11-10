@@ -18,31 +18,15 @@
       >
       </el-alert>
       <div v-if="!hasError" v-for="(item,index) in list" class="mb10">
-        <el-input
-          class="w150"
-          placeholder="StatusBar标题"
-          v-model="item.name"
-          clearable
-        >
+        <el-input class="w150" placeholder="StatusBar标题" v-model="item.name" clearable>
         </el-input>
         :
-        <el-input
-          class="w400"
-          placeholder="请输入您的链接"
-          v-model="item.url"
-          clearable
-        >
+        <el-input class="w400" placeholder="请输入您的链接" v-model="item.url" clearable>
         </el-input>
-        <el-button v-if="index === list.length - 1" plain @click="addItem"
-          >+</el-button
-        >
-        <el-button v-if="index > 0" plain @click="deleteItem($event,index)"
-          >-</el-button
-        >
+        <el-button v-if="index === list.length - 1" plain @click="addItem">+</el-button>
+        <el-button v-if="index > 0" plain @click="deleteItem($event,index)">-</el-button>
       </div>
-      <el-button v-if="!hasError" class="mt10" plain @click="save"
-        >保存配置</el-button
-      >
+      <el-button v-if="!hasError" class="mt10" plain @click="save">保存配置</el-button>
     </div>
   </body>
   <script src="./config/vscode-utils.js"></script>

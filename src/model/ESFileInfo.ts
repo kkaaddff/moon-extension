@@ -1,10 +1,10 @@
-import { FnInfo } from "./FnInfo";
+import { FnInfo } from './FnInfo'
 
 export class ESFileInfo {
-  functions: Array<FnInfo>;
-  mtime: Date;
+  functions: Array<FnInfo>
+  mtime: Date
   constructor(data: any = {}) {
-    this.functions = data.functions || new Array<FnInfo>();
-    this.mtime = new Date();
+    this.functions = data.functions || new Array<FnInfo>()
+    this.mtime = new Date()
   }
 }

@@ -2,17 +2,15 @@
 
 ## 功能
 
-### 代码中图片链接hover展示图片功能
-
+### 代码中图片链接 hover 展示图片功能
 
 <img src="https://img.alicdn.com/tfs/TB1ivTrCuL2gK0jSZFmXXc7iXXa-877-376.gif" alt="js跳转" width="800"/>
 
 ### Gallery 组件悬浮提示功能
 
-鼠标悬浮到Gallery组件的html标签上，能出现组件名称及文档链接
+鼠标悬浮到 Gallery 组件的 html 标签上，能出现组件名称及文档链接
 
 <img src="https://img.alicdn.com/tfs/TB1.7v9vAY2gK0jSZFgXXc5OFXa-690-366.gif" alt="js跳转" width="800"/>
-
 
 ### mx-view 跳转到定义功能
 
@@ -28,17 +26,17 @@
 
 ### iconfont 输入提示功能
 
-编辑 html 时，输入 ‘&’ 后，会提示所有iconfont 引用
+编辑 html 时，输入 ‘&’ 后，会提示所有 iconfont 引用
 
 <img src="https://img.alicdn.com/tfs/TB1cKrtkVP7gK0jSZFjXXc5aXXa-763-458.gif" alt="js跳转" width="800"/>
 
 ### iconfont 预览功能
 
-支持多个iconfont项目引用，通过class name 进行提示。
+支持多个 iconfont 项目引用，通过 class name 进行提示。
 
 <img src="https://img.alicdn.com/tfs/TB1wrcZkebviK0jSZFNXXaApXXa-763-458.gif" alt="js跳转" width="800"/>
 
-### 自定义StatusBar快捷方式功能
+### 自定义 StatusBar 快捷方式功能
 
 <img src="https://img.alicdn.com/tfs/TB1.xXzgKbviK0jSZFNXXaApXXa-1284-676.gif" alt="js跳转" width="800"/>
 
@@ -50,17 +48,17 @@
 
 <img src="https://img.alicdn.com/tfs/TB1SYb6heT2gK0jSZFvXXXnFXXa-1284-676.gif" alt="js跳转" width="800"/>
 
-### 跳转到Rap定义功能
+### 跳转到 Rap 定义功能
 
-在Magix 插件配置页面，可以设置 Rap跳转方式
+在 Magix 插件配置页面，可以设置 Rap 跳转方式
 
 <img src="https://img.alicdn.com/tfs/TB1a9BihUH1gK0jSZSyXXXtlpXa-1283-634.gif" alt="js跳转" width="800"/>
 
-通过快捷键`Command键+鼠标点击`,支持 Rap 接口名称跳转到Rap2页面功能
+通过快捷键`Command键+鼠标点击`,支持 Rap 接口名称跳转到 Rap2 页面功能
 
 <img src="https://img.alicdn.com/tfs/TB1z.D9hhv1gK0jSZFFXXb0sXXa-1051-557.gif" alt="js跳转" width="800"/>
 
-通过`鼠标右键选择菜单`,支持 Rap 接口名称跳转到Rap2页面功能
+通过`鼠标右键选择菜单`,支持 Rap 接口名称跳转到 Rap2 页面功能
 
 <img src="https://img.alicdn.com/tfs/TB1dRMJhp67gK0jSZPfXXahhFXa-914-530.gif" alt="js跳转" width="800"/>
 
@@ -74,9 +72,9 @@
 },
 ```
 
-### html模板页与js页跳转
+### html 模板页与 js 页跳转
 
-通过快捷键`Alt+Tab`、`Command键+鼠标点击 Magix tmpl属性值`、`右键快捷方式`，支持 html模板页与之相关联的js页跳转:
+通过快捷键`Alt+Tab`、`Command键+鼠标点击 Magix tmpl属性值`、`右键快捷方式`，支持 html 模板页与之相关联的 js 页跳转:
 
 `Alt+Tab`
 ![js跳转](https://img.alicdn.com/tfs/TB1BSndOpzqK1RjSZFoXXbfcXXa-1139-555.gif)
@@ -87,7 +85,7 @@
 `Command键+鼠标点击 Magix tmpl属性值`
 <img src="https://img.alicdn.com/tfs/TB13IHhOpzqK1RjSZFCXXbbxVXa-1139-555.gif" alt="js跳转" width="800"/>
 
-注意：由于跳转功能是基于 magix3的js/ts写法的语法分析，仅支持下面写法的跳转功能,特殊项目可联系 **@灼日** **@抱血** 添加适配
+注意：由于跳转功能是基于 magix3 的 js/ts 写法的语法分析，仅支持下面写法的跳转功能,特殊项目可联系 **@灼日** **@抱血** 添加适配
 
 ```javascript
   var Magix = require('magix');
@@ -97,13 +95,14 @@
     render:function(){}
   );
 ```
+
 ### html mx-前缀函数跳转至定义
 
-通过快捷键`MAC键+鼠标点击`，支持 html模板页函数跳转到与之相关联的js定义:
+通过快捷键`MAC键+鼠标点击`，支持 html 模板页函数跳转到与之相关联的 js 定义:
 
 <img src="https://img.alicdn.com/tfs/TB1HcjaOBLoK1RjSZFuXXXn0XXa-1139-555.gif" alt="hstz" width="800"/>
 
-### html magix mx-事件提示 
+### html magix mx-事件提示
 
 <img src="https://img.alicdn.com/tfs/TB17yPcOxTpK1RjSZFMXXbG_VXa-1139-555.gif" alt="hsts" width="800"/>
 
@@ -119,7 +118,7 @@
 
 ### 0.14
 
-接入GogoAST，支持GogoCode代码转换功能
+接入 GogoAST，支持 GogoCode 代码转换功能
 
 ### 0.13.8
 
@@ -131,19 +130,19 @@
 
 ### 0.13.1
 
-梳理无用 console 
-处理 React代码转换 MuxInput 模板生成错误问题
-添加VSCode关闭侧边窗体回收功能
+梳理无用 console
+处理 React 代码转换 MuxInput 模板生成错误问题
+添加 VSCode 关闭侧边窗体回收功能
 
 ### 0.13.0
 
-代码中图片链接hover展示图片功能
+代码中图片链接 hover 展示图片功能
 修复 Magix html 模版代码遇到空格不能折叠问题
 修复 mx-view 绝对路径不能跳转问题
 
 ### 0.12.0
 
-修复代码编译后，扫描build文件夹，造成插件假死的问题
+修复代码编译后，扫描 build 文件夹，造成插件假死的问题
 添加 Magix2.0+VUE 代码向 React Marquex 平台转换功能
 
 ### 0.11.0
@@ -170,13 +169,13 @@ Iconfont 输入提示功能
 
 ### 0.6.2
 
-自定义StatusBar快捷方式功能
+自定义 StatusBar 快捷方式功能
 失效 Rap 引用扫描功能
-跳转到Rap定义功能
+跳转到 Rap 定义功能
 
 ### 0.3.0
 
-iconfont图标 悬浮展示
+iconfont 图标 悬浮展示
 
 ### 0.2.0
 
@@ -200,18 +199,4 @@ Diamond 快捷功能
 
 ### 0.0.1
 
-html页面与js跳转功能
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+html 页面与 js 跳转功能
