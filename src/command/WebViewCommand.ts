@@ -4,9 +4,7 @@ import { WebViewCommandArgument, WebviewType } from "./CommandArgument";
 import { BaseView } from "../webview/BaseView";
 import { WelcomeWebview } from "../webview/WelcomeWebview";
 import { StatusBarShortcutWebview } from "../webview/StatusBarShortcutWebview";
-import { RapScanWebview } from "../webview/RapScanWebview";
 import { SettingWebview } from "../webview/SettingWebview";
-import { AboutWebview } from "../webview/AboutWebview";
 
 export class WebViewCommand {
   /**
@@ -24,11 +22,9 @@ export class WebViewCommand {
           } else if (args.webviewType === WebviewType.StatusBarShortcut) {
             webview = new StatusBarShortcutWebview(context);
           } else if (args.webviewType === WebviewType.RapScan) {
-            webview = new RapScanWebview(context);
           } else if (args.webviewType === WebviewType.Setting) {
             webview = new SettingWebview(context);
           } else if (args.webviewType === WebviewType.About) {
-            webview = new AboutWebview(context);
           }
           if (webview) {
             webview.show();
