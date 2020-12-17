@@ -1,0 +1,154 @@
+{
+  "name": "moon",
+  "displayName": "Moon",
+  "description": "Moon 开发增强套件 @kkaaddff",
+  "icon": "images/moonclearfill.png",
+  "version": "0.0.1",
+  "publisher": "kkaaddff",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mx.gogocode",
+        "title": "GogoCode转换"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "mx.jumper.backAndForth",
+        "key": "alt+tab",
+        "mac": "alt+tab",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [],
+      "explorer/context": [
+        {
+          "when": "resourceLangId ==  typescript",
+          "command": "mx.gogocode",
+          "group": "0_mx"
+        },
+        {
+          "when": "resourceLangId ==  javascript",
+          "command": "mx.gogocode",
+          "group": "0_mx"
+        },
+        {
+          "when": "resourceLangId ==  handlebars",
+          "command": "mx.gogocode",
+          "group": "0_mx"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "Moon",
+          "title": "Moon VSCode插件",
+          "icon": "images/Moon.svg"
+        }
+      ]
+    },
+    "views": {
+      "Moon": [
+        {
+          "id": "moon-menu-view",
+          "name": "插件设置"
+        }
+      ]
+    },
+    "grammars": [
+      {
+        "language": "handlebars",
+        "scopeName": "text.html.mxtpl",
+        "path": "./syntaxes/mxtpl.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "es",
+        "aliases": [
+          "es",
+          "ES"
+        ],
+        "extensions": [
+          ".es"
+        ]
+      },
+      {
+        "id": "handlebars",
+        "aliases": [
+          "mxtpl",
+          "handlebars"
+        ],
+        "extensions": [
+          ".tpl",
+          ".html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Moon VSCode 插件",
+        "properties": {
+          "magix.config.user.nickname": {
+            "type": "string",
+            "default": "",
+            "description": "请输入您的花名"
+          },
+          "magix.config.rap.type": {
+            "type": "string",
+            "default": "0",
+            "description": "跳转到Rap方式。0：全部、1:鼠标右键跳转、2:Command点击跳转"
+          },
+          "magix.config.gogocode.path": {
+            "type": "string",
+            "default": "",
+            "description": "gogocode 项目路径"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "prettier": "prettier -c --write '**/*'",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "vscode:prepublish": "npm run compile",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "map-lru": "^1.0.2",
+    "prettier": "^2.0.1",
+    "request": "^2.81.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21"
+  },
+  "dependencies": {
+    "@types/css-tree": "^1.0.0",
+    "css-tree": "^1.0.0-alpha.29",
+    "datauri": "^1.1.0",
+    "gogoast": "0.0.18",
+    "map-lru": "^1.0.2",
+    "opn": "^4.0.2",
+    "posthtml-parser": "^0.4.2",
+    "request": "^2.81.0"
+  },
+  "repository": "https://github.com/thx/vscode-magix",
+  "author": "",
+  "license": "ISC"
+}
